@@ -30,7 +30,7 @@ discovery=[
 get '/' do
   @page_title = "Test hex"
   @hex=events
-  @esploration=discovery
+  @exploration=discovery
   erubis :index
 end
 
