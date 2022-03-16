@@ -1,3 +1,8 @@
+<% if @error_message %>
+<div class="error">
+	<p><%= @error_message %></p>
+</div>
+<% end %>
 <div class='map'>
 	<% @hex.each_with_index do |row,index_row| %> 
 	<div class="hex-row<%if(index_row.odd?) %> even<%end%>">

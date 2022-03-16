@@ -1,0 +1,10 @@
+# testing
+1-4 explored
+1-6 explored
+2-4 explored
+2-5 explored
+3-4 explored
+3-5 seen
+4-3 explored
+4-4 seen
+4-5 seen
