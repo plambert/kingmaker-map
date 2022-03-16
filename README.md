@@ -19,5 +19,6 @@ To run headless in Docker:
 
 I've removed the web-based editing, and removed the default sinatra caching, so it will refresh quickly.
 
-To update the map, edit the `app.rb` and redeploy
+
+To update the map, edit the `exploration.txt` file.  It is read on every GET request, so you can update it in place without restarting the service.  If using Docker, just rebuild the image and redeploy.
 
