@@ -1,40 +1,56 @@
 require 'sinatra'
-require 'erubis'
 
-events=[[0,1,2,3,4,5,6,7],
-		[0,{"type"=>"tomb","name"=>"Barbarian Cairn"},2,{"type"=>"trap","name"=>"Trap-Filled Glade"},4,{"type"=>"structure","name"=>"Oleg's Trade Post"},{"type"=>"hut","name"=>"Bokken's Hut"},7],
-		[0,1,{"type"=>"tomb","name"=>"Dead Trapper"},{"type"=>"monster","name"=>"Fairy Nest"},{"type"=>"plant","name"=>"Radish Patch"},{"type"=>"monster","name"=>"Spider's Nest"},6,7],
-		[0,1,{"type"=>"landmark","name"=>"Frog Pond"},{"type"=>"ruin","name"=>"Temple of Elk"},{"type"=>"bridge","name"=>"Thorn River Camp"},5,6,7],
-		[0,1,2,3,4,5,6,7],
-		[0,1,2,3,4,5,6,7],
-		[0,1,2,3,4,5,6,7],
-		[0,1,2,3,4,5,6,7],
-		[0,1,2,3,4,5,6,7],
-		[0,1,2,3,4,5,6,7],
-		[0,1,2,3,4,5,6,7]]
+empty=0
+cairn={"type"=>"tomb","name"=>"Barbarian Cairn"}
+glade={"type"=>"trap","name"=>"Trap-Filled Glade"}
+olegs={"type"=>"structure","name"=>"Oleg's Trading Post"}
+bokkens={"type"=>"hut","name"=>"Bokken's Hut"}
+trapper={"type"=>"tomb","name"=>"Dead Trapper"}
+fnest={"type"=>"monster","name"=>"Fairy Nest"}
+rpatch={"type"=>"plant","name"=>"Radish Patch"}
+spiders={"type"=>"monster","name"=>"Spider's Nest"}
+frogpond={"type"=>"landmark","name"=>"Frog Pond"}
+temple={"type"=>"ruin","name"=>"Temple of Elk"}
+trcamp={"type"=>"bridge","name"=>"Thorn River Camp"}
+
+
+events=[
+  [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ],
+  [    empty,     cairn,    empty,    glade,    empty,    olegs,  bokkens,    empty ],
+  [    empty,     empty,  trapper,    fnest,   rpatch,  spiders,    empty,    empty ],
+  [    empty,     empty, frogpond,   temple,   trcamp,    empty,    empty,    empty ],
+  [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ],
+  [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ],
+  [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ],
+  [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ],
+  [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ],
+  [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ],
+  [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ]
+]
 
 # zero for unseen, "no" for seen but unexplored, "yes" for fully explored
 discovery=[
-	[0,0,0,0,"yes","yes","yes","yes"],
-	[0,0,0,0,0,"yes",0,0],
-	[0,0,0,0,0,0,0,0],
-	[0,0,0,0,0,0,0,0],
-	[0,0,0,0,0,0,0,0],
-	[0,0,0,0,0,0,0,0],
-	[0,0,0,0,0,0,0,0],
-	[0,0,0,0,0,0,0,0],
-	[0,0,0,0,0,0,0,0],
-	[0,0,0,0,0,0,0,0],
-	[0,0,0,0,0,0,0,0]]
+  [0,0,0,0,"yes","yes","yes","yes"],
+  [0,0,0,0,0,"yes",0,0],
+  [0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0],
+]
 
 set :static_cache_control, [:public, :must_revalidate, :max_age => 10]
 
 get '/' do
-	cache_control :public, :must_revalidate, :max_age => 60
+  cache_control :public, :must_revalidate, :max_age => 60
   @page_title = "Test hex"
   @hex=events
   @exploration=discovery
-  erubis :index
+  erb :index
 end
 
 # get '/hexstatus/:row/:tile/:status' do
