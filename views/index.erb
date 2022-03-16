@@ -1,4 +1,4 @@
-<div Class='map'>
+<div class='map'>
 	<% @hex.each_with_index do |row,index_row| %> 
 	<div class="hex-row<%if(index_row.odd?) %> even<%end%>">
 		<%	row.each_with_index do |tile,index_tile| %>
@@ -8,17 +8,14 @@
 				<%="explored="+@exploration[index_row][index_tile].to_s%>
 				<%end%>>
 			<%else%>
-			<div class="hex" row=<%=index_row.to_s%> tile=<%=index_tile.to_s%>
-			<%if(@exploration[index_row][index_tile]!=0)%>
-				<%="explored="+@exploration[index_row][index_tile].to_s%>
-				<%end%>>
+			<div class="hex" row=<%=index_row.to_s%> tile=<%=index_tile.to_s%><%if(@exploration[index_row][index_tile]!=0)%><%=" explored="+@exploration[index_row][index_tile].to_s%><%end%>>
 			<%end%>
 				<div class="text"><%=index_row.to_s+"-"+index_tile.to_s%></div>
 				<div class="top"></div>
 				<div class="middle"></div>
 				<div class="bottom"></div>
 			</div>
-		<%end %>
+		<%end%>
 	</div>
-	<%end %>
+	<%end%>
 </div>
