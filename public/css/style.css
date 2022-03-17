@@ -19,7 +19,7 @@
 	margin-left: 3px;
 	margin-bottom: -27px;
 }
-.hex .text {
+.hex div.text {
 	width: 80px;
 	float: left;
 	padding-left: 20px;
@@ -53,4 +53,65 @@
 .hex-row.even {
 	margin-left: -61px;
 }
-
+.hex.bridge {
+	background-image: url('../images/bridge.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+}
+.hex.hut {
+	background-image: url('../images/hut.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+}
+.hex.mine {
+	background-image: url('../images/mine.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+}
+.hex.monster {
+	background-image: url('../images/monster.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+}
+.hex.plant {
+	background-image: url('../images/plant.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+}
+.hex.ruin {
+	background-image: url('../images/ruin.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+}
+.hex.structure {
+	background-image: url('../images/structure.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+}
+.hex.tomb {
+	background-image: url('../images/tomb.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+}
+.hex.trap {
+	background-image: url('../images/trap.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+}
+.hex.notexplored {
+	background-image: url('../images/notexplored.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.hex.visible div.cover {
+	opacity: 0;
+}
