@@ -7,7 +7,7 @@
 	<% @hex.each_with_index do |row,index_row| %> 
 	<div class="hex-row<%if(index_row.odd?) %> even<%end%>">
 		<%	row.each_with_index do |tile,index_tile| %>
-			<%if tile.is_a?(Hash)%>
+			<%if tile.is_a?(Hash) and @exploration[index_row][index_tile] == "yes"%>
 			<div class="hex" eventtype=<%= tile["type"].to_s%> eventname="<%= tile["name"].to_s%>" row=<%=index_row.to_s%> tile=<%=index_tile.to_s%> 
 				<%if(@exploration[index_row][index_tile]!=0)%>
 				<%="explored="+@exploration[index_row][index_tile].to_s%>
