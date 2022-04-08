@@ -14,3 +14,7 @@
 3-5 explored
 3-6 explored
 3-7 seen
+3-7 explored
+2-7 explored
+2-6 explored
+1-7 explored
