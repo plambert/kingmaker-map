@@ -8,3 +8,9 @@
 4-3 explored
 4-4 seen
 4-5 seen
+4-4 explored
+5-6 seen
+4-5 explored
+3-5 explored
+3-6 explored
+3-7 seen
