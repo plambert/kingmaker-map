@@ -37,3 +37,13 @@
 2-3 seen
 2-3 explored
 2-1 seen
+2-1 explored
+2-0 seen
+2-0 explored
+3-0 explored
+4-0 explored
+3-1 explored
+4-1 seen
+4-1 explored
+3-2 seen
+3-2 explored
