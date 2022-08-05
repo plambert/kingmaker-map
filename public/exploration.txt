@@ -48,3 +48,12 @@
 3-2 seen
 3-2 explored
 5-3 explored
+5-4 seen
+5-4 explored
+4-6 seen
+4-6 explored
+4-7 explored
+5-7 explored
+5-6 explored
+5-5 explored
+6-4 seen
