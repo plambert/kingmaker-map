@@ -30,6 +30,7 @@ fberry={"type"=>"plant","name"=>"Fangberry Thicket"}
 crossing={"type"=>"bridge","name"=>"River Crossing"}
 kobolds={"type"=>"monster","name"=>"Sootscale Caverns"}
 fort={"type"=>"structure","name"=>"Staglord’s Fort"}
+crackjaw={"type"=>"monster","name"=>"Old Crackjaw"}
 
 events=[
   [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ],
@@ -39,7 +40,7 @@ events=[
   [    empty,    statue,  boggard,  tgutter,  rbridge, sycamore,  nettles,    empty ],
   [    empty,   unicorn,     wyrm,    tcine,   fberry, crossing,  kobolds,    empty ],
   [    empty,     empty,    empty,    empty,     fort,    empty,    empty,    empty ],
-  [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ],
+  [    empty,     empty,    empty,    empty,    empty, crackjaw,    empty,    empty ],
   [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ],
   [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ],
   [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ]
