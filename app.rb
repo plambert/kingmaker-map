@@ -55,7 +55,7 @@ wyrm={"type"=>"bridge","name"=>"Tatzlwyrm’s Den"}
 
 events=[
   [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ],
-  [    cairn,     empty,    empty,    glade,    empty,    olegs,  bokkens,    empty ],
+  [    empty,     cairn,    empty,    glade,    empty,    olegs,  bokkens,    empty ],
   [    empty,     empty,  trapper,    fnest,   rpatch,  spiders,    empty,    empty ],
   [    empty,     empty, frogpond,   temple,   trcamp,    gmine,   fcache,    empty ],
   [    empty,    statue,  boggard,  tgutter,  rbridge, sycamore,  nettles,    empty ],
