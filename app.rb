@@ -4,33 +4,54 @@ empty=0
 y="yes"
 n="no"
 
-cairn={"type"=>"tomb","name"=>"Barbarian Cairn"}
-glade={"type"=>"trap","name"=>"Trap-Filled Glade"}
-olegs={"type"=>"structure","name"=>"Oleg’s Trading Post"}
+barrow={"type"=>"landmark","name"=>"Lonely Barrow"}
+boggard={"type"=>"monster","name"=>"Boggard Lair"}
 bokkens={"type"=>"hut","name"=>"Bokken's Hut"}
-trapper={"type"=>"tomb","name"=>"Dead Trapper"}
+cairn={"type"=>"tomb","name"=>"Barbarian Cairn"}
+callhelp={"type"=>"monster","name"=>"A Call for Help"}
+crackjaw={"type"=>"monster","name"=>"Old Crackjaw"}
+crossing={"type"=>"bridge","name"=>"River Crossing"}
+delicate={"type"=>"resource","name"=>"Delicate Situation"}
+exped={"type"=>"camp","name"=>"Narthropple Expedition"}
+fberry={"type"=>"plant","name"=>"Fangberry Thicket"}
+fcache={"type"=>"tomb","name"=>"Forgotten Cache"}
+ferry={"type"=>"bridge","name"=>"Abandonded Ferry Station"}
 fnest={"type"=>"monster","name"=>"Fairy Nest"}
+ford={"type"=>"bridge","name"=>"Gurdin River Ford"}
+fort={"type"=>"structure","name"=>"Staglord’s Fort"}
+frogpond={"type"=>"monster","name"=>"Frog Pond"}
+giant={"type"=>"monster","name"=>"Wandering Giant"}
+glade={"type"=>"trap","name"=>"Trap-Filled Glade"}
+gmine={"type"=>"mine","name"=>"Gold Mine"}
+grove={"type"=>"monster","name"=>"Grove of Tiressia"}
+hargulka={"type"=>"lair","name"=>"Hargulka's Stronghold"}
+hermit={"type"=>"hut","name"=>"Mad Hermit"}
+hodagden={"type"=>"monster","name"=>"Hodag Den"}
+hollow={"type"=>"plant","name"=>"Blighted Hollow"}
+keep={"type"=>"ruin","name"=>"Abandoned Keep"}
+kingfor={"type"=>"monster","name"=>"King of the Forest"}
+kobolds={"type"=>"monster","name"=>"Sootscale Caverns"}
+lizking={"type"=>"lair","name"=>"Lair of the Lizard King"}
+mudbowl={"type"=>"resource","name"=>"The Mud Bowl"}
+nettles={"type"=>"bridge","name"=>"Nettle’s Crossing"}
+olegs={"type"=>"structure","name"=>"Oleg’s Trading Post"}
+onprowl={"type"=>"monster","name"=>"On the Prowl"}
+owlbear={"type"=>"monster","name"=>"Owlbear Lair"}
+rbridge={"type"=>"bridge","name"=>"Rickety Bridge"}
 rpatch={"type"=>"plant","name"=>"Radish Patch"}
 spiders={"type"=>"monster","name"=>"Spider's Nest"}
-frogpond={"type"=>"monster","name"=>"Frog Pond"}
-temple={"type"=>"ruin","name"=>"Temple of Elk"}
-trcamp={"type"=>"bridge","name"=>"Thorn River Camp"}
-gmine={"type"=>"mine","name"=>"Gold Mine"}
-fcache={"type"=>"tomb","name"=>"Forgotten Cache"}
 statue={"type"=>"ruin","name"=>"Statue of Erastil"}
-boggard={"type"=>"monster","name"=>"Boggard Lair"}
-tgutter={"type"=>"monster","name"=>"Tuskgutter’s Lair"}
-rbridge={"type"=>"bridge","name"=>"Rickety Bridge"}
 sycamore={"type"=>"monster","name"=>"The Old Sycamore"}
-nettles={"type"=>"bridge","name"=>"Nettle’s Crossing"}
-unicorn={"type"=>"tomb","name"=>"Dead Unicorn"}
-wyrm={"type"=>"bridge","name"=>"Tatzlwyrm’s Den"}
 tcine={"type"=>"trap","name"=>"Trapped Thylacine"}
-fberry={"type"=>"plant","name"=>"Fangberry Thicket"}
-crossing={"type"=>"bridge","name"=>"River Crossing"}
-kobolds={"type"=>"monster","name"=>"Sootscale Caverns"}
-fort={"type"=>"structure","name"=>"Staglord’s Fort"}
-crackjaw={"type"=>"monster","name"=>"Old Crackjaw"}
+temple={"type"=>"ruin","name"=>"Temple of Elk"}
+tgutter={"type"=>"monster","name"=>"Tuskgutter’s Lair"}
+tower={"type"=>"ruin","name"=>"Candlemere Tower"}
+trapper={"type"=>"tomb","name"=>"Dead Trapper"}
+trcamp={"type"=>"bridge","name"=>"Thorn River Camp"}
+unicorn={"type"=>"tomb","name"=>"Dead Unicorn"}
+witch={"type"=>"hut","name"=>"Swamp Witch"}
+wyrm={"type"=>"bridge","name"=>"Tatzlwyrm’s Den"}
+
 
 events=[
   [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ],
@@ -39,10 +60,10 @@ events=[
   [    empty,     empty, frogpond,   temple,   trcamp,    gmine,   fcache,    empty ],
   [    empty,    statue,  boggard,  tgutter,  rbridge, sycamore,  nettles,    empty ],
   [    empty,   unicorn,     wyrm,    tcine,   fberry, crossing,  kobolds,    empty ],
-  [    empty,     empty,    empty,    empty,     fort,    empty,    empty,    empty ],
-  [    empty,     empty,    empty,    empty,    empty, crackjaw,    empty,    empty ],
-  [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ],
-  [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ],
+  [    empty,     grove, delicate,    exped,     fort,  onprowl,   barrow,    empty ],
+  [    empty,      keep,   hollow,   hermit,    witch, crackjaw,     ford,    empty ],
+  [ hodagden,     empty,  lizking,    tower,  mudbowl,    empty, callhelp,    empty ],
+  [    empty,  hargulka,  kingfor,    empty,    giant,    ferry,  owlbear,    empty ],
   [    empty,     empty,    empty,    empty,    empty,    empty,    empty,    empty ]
 ]
 
