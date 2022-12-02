@@ -60,3 +60,9 @@
 6-5 explored
 7-5 seen
 7-5 explored
+6-4 explored
+6-3 explored
+6-2 seen
+6-2 explored
+5-2 explored
+
