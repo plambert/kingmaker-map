@@ -68,3 +68,10 @@
 6-1 explored
 7-3 seen
 7-3 explored
+7-6 seen
+7-6 explored
+7-7 seen
+7-7 explored
+6-7 explored
+6-6 explored
+5-1 explored
