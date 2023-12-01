@@ -75,3 +75,5 @@
 6-7 explored
 6-6 explored
 5-1 explored
+7-4 seen
+7-4 explored
