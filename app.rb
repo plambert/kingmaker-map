@@ -38,6 +38,7 @@ olegs={"type"=>"structure","name"=>"Oleg’s Trading Post"}
 onprowl={"type"=>"monster","name"=>"On the Prowl"}
 owlbear={"type"=>"monster","name"=>"Owlbear Lair"}
 rbridge={"type"=>"bridge","name"=>"Rickety Bridge"}
+riverbend={"type"=>"structure","name"=>"River's Bend"}
 rpatch={"type"=>"plant","name"=>"Radish Patch"}
 spiders={"type"=>"monster","name"=>"Spider's Nest"}
 statue={"type"=>"ruin","name"=>"Statue of Erastil"}
@@ -58,7 +59,7 @@ events=[
   [    empty,     cairn,    empty,    glade,    empty,    olegs,  bokkens,    empty ],
   [    empty,     empty,  trapper,    fnest,   rpatch,  spiders,    empty,    empty ],
   [    empty,     empty, frogpond,   temple,   trcamp,    gmine,   fcache,    empty ],
-  [    empty,    statue,  boggard,  tgutter,  rbridge, sycamore,  nettles,    empty ],
+  [    empty,    statue,  boggard,  tgutter,riverbend, sycamore,  nettles,    empty ],
   [    empty,   unicorn,     wyrm,    tcine,   fberry, crossing,  kobolds,    empty ],
   [    empty,     grove, delicate,    exped,     fort,  onprowl,   barrow,    empty ],
   [    empty,      keep,   hollow,   hermit,    witch, crackjaw,     ford,    empty ],
