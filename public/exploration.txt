@@ -77,3 +77,11 @@
 5-1 explored
 7-4 seen
 7-4 explored
+7-2 explored
+7-1 seen
+7-1 explored
+8-1 seen
+8-1 explored
+8-0 seen
+9-1 seen
+
