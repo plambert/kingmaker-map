@@ -84,4 +84,10 @@
 8-1 explored
 8-0 seen
 9-1 seen
-
+8-6 seen
+9-6 explored
+8-6 explored
+8-5 explored
+8-4 seen
+8-3 seen
+8-2 seen
